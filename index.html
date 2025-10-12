@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy | Weather + Outfit Suggester</title>
+  <meta name="description" content="Privacy Policy for Weather + Outfit Suggester (Japanese & English)" />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #111735;
+      --text: #e8ecf1;
+      --muted: #a9b3c1;
+      --accent: #5aa6ff;
+      --ok: #1db954;
+      --warn: #ffb020;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Hiragino Sans", "Meiryo", sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #121a3b 100%) fixed;
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .container {
+      max-width: 940px;
+      margin: 32px auto;
+      padding: 0 20px 64px;
+    }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .brand { font-weight: 700; font-size: 1.1rem; letter-spacing: .2px; color: var(--text); text-decoration: none; }
+    .lang-switch {
+      display: inline-flex; gap: 8px; background: rgba(255,255,255,.06); padding: 6px; border-radius: 999px;
+    }
+    .lang-switch button {
+      padding: 8px 14px; border: 0; border-radius: 999px; cursor: pointer;
+      background: transparent; color: var(--text); font-weight: 600;
+    }
+    .lang-switch button[aria-pressed="true"] { background: var(--accent); color: #071225; }
+    .card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.25);
+    }
+    h1 { margin: 10px 0 16px; font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+    h2 { margin: 28px 0 12px; font-size: 1.25rem; }
+    h3 { margin: 22px 0 8px; font-size: 1.05rem; }
+    p { margin: 10px 0; color: var(--text); }
+    ul { margin: 8px 0 16px 1.2em; color: var(--text); }
+    li + li { margin-top: 6px; }
+    .meta { color: var(--muted); font-size: .95rem; }
+    .badge { display: inline-block; font-size: .75rem; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,.08); color: var(--muted); margin-right: 6px;}
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .notice { background: rgba(90,166,255,.12); border-left: 4px solid var(--accent); padding: 10px 12px; border-radius: 8px; color: var(--text); }
+    .grid { display: grid; gap: 16px; }
+    @media (min-width: 880px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .muted { color: var(--muted); }
+    footer { margin-top: 28px; color: var(--muted); font-size: .9rem; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">Weather + Outfit Suggester</a>
+      <div class="lang-switch" role="tablist" aria-label="Language switch">
+        <button id="btn-ja" role="tab" aria-controls="privacy-ja" aria-pressed="false">日本語</button>
+        <button id="btn-en" role="tab" aria-controls="privacy-en" aria-pressed="true">English</button>
+      </div>
+    </header>
+
+    <!-- English -->
+    <article id="privacy-en" class="card" lang="en">
+      <h1>Privacy Policy</h1>
+      <div class="meta">
+        <span class="badge">EN</span>
+        <span><strong>Last updated:</strong> October 12, 2025</span>
+      </div>
+
+      <p>This Privacy Policy explains how <strong>[Your Company/Name]</strong> (“we”, “us”, or “our”) collects, uses, and shares information when you use the mobile application <strong>Weather + Outfit Suggester</strong> (the “App”). If you do not agree with this Policy, please do not use the App.</p>
+
+      <h2>1. Information we collect</h2>
+      <h3>1.1 Location data</h3>
+      <ul>
+        <li><strong>Purpose:</strong> fetch local weather and generate outfit suggestions</li>
+        <li><strong>Source:</strong> device location services, with your permission</li>
+        <li><strong>Control:</strong> disable location in device settings or use manual address</li>
+      </ul>
+
+      <h3>1.2 Weather data</h3>
+      <ul>
+        <li><strong>Source:</strong> Apple WeatherKit APIs</li>
+        <li><strong>Note:</strong> non-identifying forecast data, potentially combined with your approximate area</li>
+      </ul>
+
+      <h3>1.3 Device &amp; app usage data</h3>
+      <ul>
+        <li><strong>Purpose:</strong> operations, diagnostics, fraud prevention, ads delivery/measurement</li>
+        <li><strong>Source:</strong> integrated SDKs (see Section 3); may include device identifiers (e.g., IDFA where permitted), app version, and interactions</li>
+      </ul>
+
+      <h3>1.4 AI generation inputs</h3>
+      <ul>
+        <li><strong>Purpose:</strong> to create natural-language summaries and outfit suggestions</li>
+        <li><strong>Data sent:</strong> structured, <em>non-identifying</em> weather features (temperature, humidity, precipitation, wind), selected day label and date</li>
+        <li><strong>We do not send:</strong> names, emails, or precise coordinates</li>
+      </ul>
+
+      <h2>2. How we use information</h2>
+      <ul>
+        <li>Provide core features (weather lookup, outfit recommendations)</li>
+        <li>Show and measure ads where permitted by consent or applicable law</li>
+        <li>Improve reliability and security (debugging, abuse detection)</li>
+        <li>Comply with legal obligations and enforce terms</li>
+      </ul>
+      <p class="muted"><strong>Legal bases (EEA/UK):</strong> consent (e.g., personalized ads, precise location) and legitimate interests (basic app functions, non-personalized ads, security), as applicable.</p>
+
+      <h2>3. SDKs and third parties</h2>
+      <ul>
+        <li><strong>Google Mobile Ads (AdMob)</strong> — advertising delivery &amp; measurement. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Learn more</a></li>
+        <li><strong>User Messaging Platform (UMP)</strong> — consent collection and storage. <a href="https://support.google.com/admob/answer/10113207" target="_blank" rel="noopener">Learn more</a></li>
+        <li><strong>Apple WeatherKit</strong> — forecast data. <a href="https://developer.apple.com/weatherkit/" target="_blank" rel="noopener">Learn more</a></li>
+        <li><strong>OpenAI API</strong> (via our edge/server) — text generation from weather features. <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Learn more</a></li>
+      </ul>
+      <p><strong>Data sharing:</strong> limited data is shared with these providers to operate the App (e.g., ad requests, consent signals). We do <strong>not</strong> sell personal information.</p>
+
+      <h2>4. Cookies, identifiers, and tracking</h2>
+      <ul>
+        <li>IDFA/ATT prompts may be used where you grant permission</li>
+        <li>Ad partners’ SDKs may use local storage or similar technologies for delivery and measurement</li>
+      </ul>
+
+      <h2>5. International transfers</h2>
+      <p>We and our providers may process data outside your country. Where required, we rely on appropriate safeguards (e.g., Standard Contractual Clauses) or your consent.</p>
+
+      <h2>6. Your choices &amp; rights</h2>
+      <ul>
+        <li><strong>In-app controls:</strong> open <em>Settings → Privacy</em> to manage consent (EEA/UK and applicable US states)</li>
+        <li><strong>Location:</strong> disable in your device settings or use manual address</li>
+      </ul>
+      <p class="muted"><strong>EEA/UK rights:</strong> access, correction, deletion, portability, objection/restriction, and withdraw consent at any time. Contact us to exercise rights.</p>
+      <p class="muted"><strong>US state privacy rights:</strong> where applicable, opt out of “Sale/Share” and targeted advertising via in-app controls.</p>
+
+      <h2>7. Data retention</h2>
+      <p>We retain data only as long as needed for the purposes described, unless a longer period is required by law. Consent records may be retained to demonstrate compliance.</p>
+
+      <h2>8. Children’s privacy</h2>
+      <p>The App is not directed to children under 13 (or a higher age where required). If you believe a child provided information, please contact us.</p>
+
+      <h2>9. Security</h2>
+      <p>We use reasonable technical and organizational measures to protect information. No method of transmission or storage is completely secure.</p>
+
+      <h2>10. Changes to this Policy</h2>
+      <p>We may update this Policy. We will post the new version with an updated “Last updated” date. Material changes may be announced in-app.</p>
+
+      <h2>11. Contact</h2>
+      <p><strong>Controller/Operator:</strong> [Your Company/Name]<br />
+         <strong>Email:</strong> <a href="mailto:your-contact@example.com">your-contact@example.com</a><br />
+         <strong>Address:</strong> [Postal address or jurisdiction]</p>
+
+      <h2>12. App-specific details</h2>
+      <ul>
+        <li>App: Weather + Outfit Suggester (iOS)</li>
+        <li>Primary data: device location (with permission), non-identifying weather features, ad/consent signals</li>
+        <li>Purposes: service delivery, ads/measurement (with consent), security, diagnostics</li>
+      </ul>
+
+      <div class="notice">
+        Store listing short-form: <em>Data not linked to you</em> — location (for weather), diagnostics, usage data, identifiers (for ads/measurement when allowed). <em>Tracking</em> only with your consent via ATT/UMP.
+      </div>
+    </article>
+
+    <!-- Japanese -->
+    <article id="privacy-ja" class="card" lang="ja" hidden>
+      <h1>プライバシーポリシー</h1>
+      <div class="meta">
+        <span class="badge">JA</span>
+        <span><strong>最終更新日:</strong> 2025年10月12日</span>
+      </div>
+
+      <p>本プライバシーポリシーは、<strong>[あなたの名称]</strong>（以下「当社」）がモバイルアプリ<strong>Weather + Outfit Suggester</strong>（以下「本アプリ」）において、情報をどのように収集・利用・共有するかを説明します。本ポリシーに同意いただけない場合は、本アプリをご利用にならないでください。</p>
+
+      <h2>1. 収集する情報</h2>
+      <h3>1.1 位置情報</h3>
+      <ul>
+        <li><strong>目的:</strong> 周辺の天気を取得し、服装提案を生成するため</li>
+        <li><strong>取得元:</strong> 端末の位置情報サービス（許可がある場合）</li>
+        <li><strong>制御:</strong> 端末設定で無効化、またはアプリ内で住所入力を利用可</li>
+      </ul>
+
+      <h3>1.2 天気データ</h3>
+      <ul>
+        <li><strong>取得元:</strong> Apple WeatherKit API</li>
+        <li><strong>備考:</strong> 個人を特定しない気象データであり、概ねの地域情報と組み合わせて利用される場合があります</li>
+      </ul>
+
+      <h3>1.3 端末・利用状況データ</h3>
+      <ul>
+        <li><strong>目的:</strong> アプリの動作、診断、不正防止、広告配信・計測</li>
+        <li><strong>取得元:</strong> 本アプリに組み込まれたSDK（第3章参照）。端末識別子（例: 許可時のIDFA）、アプリバージョン、操作ログ等を含む場合があります</li>
+      </ul>
+
+      <h3>1.4 生成AIへの入力</h3>
+      <ul>
+        <li><strong>目的:</strong> 天気に基づく文章要約・服装提案の生成</li>
+        <li><strong>送信データ:</strong> 気温・湿度・降水・風などの<em>非識別</em>の気象特徴量、対象日ラベルと表示日付</li>
+        <li><strong>送信しない情報:</strong> 氏名、メール、正確な座標</li>
+      </ul>
+
+      <h2>2. 利用目的</h2>
+      <ul>
+        <li>基本機能の提供（天気取得、服装提案）</li>
+        <li>同意または法令に基づく広告配信・計測</li>
+        <li>信頼性と安全性の向上（デバッグ、不正検知）</li>
+        <li>法令遵守および利用規約の履行</li>
+      </ul>
+      <p class="muted"><strong>EEA/UKにおける法的根拠:</strong> 同意（例: パーソナライズ広告、正確な位置情報）および正当な利益（基本機能、非パーソナライズ広告、安全対策）等、該当する場合。</p>
+
+      <h2>3. SDK・第三者</h2>
+      <ul>
+        <li><strong>Google Mobile Ads（AdMob）</strong> — 広告配信・計測。<a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">詳細</a></li>
+        <li><strong>User Messaging Platform（UMP）</strong> — 同意取得・管理。<a href="https://support.google.com/admob/answer/10113207" target="_blank" rel="noopener">詳細</a></li>
+        <li><strong>Apple WeatherKit</strong> — 天気データ。<a href="https://developer.apple.com/weatherkit/" target="_blank" rel="noopener">詳細</a></li>
+        <li><strong>OpenAI API</strong>（当社のエッジ/サーバ経由）— 気象特徴量に基づく文章生成。<a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">詳細</a></li>
+      </ul>
+      <p><strong>データ共有:</strong> 本アプリの運用に必要な範囲で上記提供先と限定的に共有します（広告リクエスト、同意シグナル等）。当社は個人情報を<strong>販売しません</strong>。</p>
+
+      <h2>4. クッキー・識別子・トラッキング</h2>
+      <ul>
+        <li>端末の許可がある場合、IDFA/ATTプロンプトを利用することがあります</li>
+        <li>広告パートナーのSDKは、配信・計測のためローカルストレージ等の技術を用いる場合があります</li>
+      </ul>
+
+      <h2>5. 国外移転</h2>
+      <p>当社および提供先は、あなたの所在国以外でデータを取り扱う場合があります。必要に応じ、標準契約条項などの適切な保護措置やあなたの同意に依拠します。</p>
+
+      <h2>6. 選択肢・権利</h2>
+      <ul>
+        <li><strong>アプリ内コントロール:</strong> <em>設定 → Privacy</em> にて同意の確認・変更（EEA/UKおよび該当する米国州）</li>
+        <li><strong>位置情報:</strong> 端末設定で許可/不許可を制御、または住所入力を使用</li>
+      </ul>
+      <p class="muted"><strong>EEA/UKの権利:</strong> 開示、訂正、削除、ポータビリティ、処理の制限/異議、同意撤回等。権利行使はお問い合わせください。</p>
+      <p class="muted"><strong>米国州プライバシー:</strong> 該当する場合、「販売/共有」のオプトアウトやターゲティング広告の拒否が可能です（アプリ内の同意設定から操作）。</p>
+
+      <h2>7. データ保持</h2>
+      <p>本ポリシーに記載の目的達成に必要な期間のみ保持します。法令遵守のため同意記録を保存する場合があります。</p>
+
+      <h2>8. 児童のプライバシー</h2>
+      <p>本アプリは13歳未満（または法域で定める年齢）を対象としていません。未成年者の情報提供が判明した場合はご連絡ください。</p>
+
+      <h2>9. セキュリティ</h2>
+      <p>合理的な技術的・組織的安全管理措置を講じます。ただし、送受信・保管の方法は完全に安全とは限りません。</p>
+
+      <h2>10. 変更</h2>
+      <p>本ポリシーは更新される場合があります。更新時は本ページの「最終更新日」を変更し、重要な変更はアプリ内等で告知する場合があります。</p>
+
+      <h2>11. 連絡先</h2>
+      <p><strong>運営者名:</strong> [あなたの名称]<br />
+         <strong>メール:</strong> <a href="mailto:your-contact@example.com">your-contact@example.com</a><br />
+         <strong>住所:</strong> [住所または管轄]</p>
+
+      <h2>12. アプリ固有の情報</h2>
+      <ul>
+        <li>アプリ名: Weather + Outfit Suggester（iOS）</li>
+        <li>主なデータ: 位置情報（許可時）、非識別の気象特徴量、広告/同意シグナル</li>
+        <li>目的: サービス提供、広告/計測（同意時）、セキュリティ、診断</li>
+      </ul>
+
+      <div class="notice">
+        ストア向け簡易表記例：<em>ユーザーにリンクしないデータ</em> — 位置情報（天気用途）、診断、使用状況、識別子（許可時の広告/計測）。<em>トラッキング</em>は ATT/UMP で同意がある場合のみ。
+      </div>
+    </article>
+
+    <footer>
+      <p>
+        <a href="#privacy-en">English</a> · <a href="#privacy-ja">日本語</a>
+      </p>
+      <p class="muted">© <span id="year"></span> [Your Company/Name]. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const $en = document.getElementById('privacy-en');
+      const $ja = document.getElementById('privacy-ja');
+      const $btnEn = document.getElementById('btn-en');
+      const $btnJa = document.getElementById('btn-ja');
+
+      function show(lang) {
+        const isJA = lang === 'ja';
+        document.documentElement.lang = isJA ? 'ja' : 'en';
+        $ja.hidden = !isJA;
+        $en.hidden = isJA;
+        $btnJa.setAttribute('aria-pressed', String(isJA));
+        $btnEn.setAttribute('aria-pressed', String(!isJA));
+        // keep anchor in URL for deep-linking
+        const hash = isJA ? '#privacy-ja' : '#privacy-en';
+        if (location.hash !== hash) history.replaceState(null, '', hash);
+      }
+
+      // init by hash > ?lang= > navigator.language
+      const params = new URLSearchParams(location.search);
+      const qlang = (params.get('lang') || '').toLowerCase();
+      const hash = (location.hash || '').toLowerCase();
+      const navIsJA = (navigator.language || '').toLowerCase().startsWith('ja');
+
+      if (hash.includes('privacy-ja') || qlang === 'ja') show('ja');
+      else if (hash.includes('privacy-en') || qlang === 'en') show('en');
+      else show(navIsJA ? 'ja' : 'en');
+
+      $btnEn.addEventListener('click', () => show('en'));
+      $btnJa.addEventListener('click', () => show('ja'));
+
+      // footer year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
